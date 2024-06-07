@@ -1,4 +1,4 @@
-## Math Learning Platform (MLP) - README
+## Math Learning Platform - Microservice Java
 
 ### Overview
 
