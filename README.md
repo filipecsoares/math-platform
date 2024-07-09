@@ -245,8 +245,6 @@ This project is built using a microservices architecture, with each service hand
 
 ### Development Steps
 
-Absolutely, let's make the task descriptions more detailed and specific. Here's the revised list:
-
 1. **Setup and Initialize the Project**
 
    - [ ] Initialize each microservice project with Spring Initializr, selecting the necessary dependencies for each service, such as:
