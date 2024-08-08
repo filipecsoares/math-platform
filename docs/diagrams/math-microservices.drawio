@@ -1,0 +1,92 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="sV6izyEApz9aM94Q0zbQ">
+    <mxGraphModel dx="1434" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-1" target="r7ALPoRaKJmXhEfd2DpJ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-13" value="Check user&lt;br&gt;Get Token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7ALPoRaKJmXhEfd2DpJ-12">
+          <mxGeometry x="-0.0197" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-1" target="r7ALPoRaKJmXhEfd2DpJ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-15" value="Send Problem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7ALPoRaKJmXhEfd2DpJ-14">
+          <mxGeometry x="-0.1143" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-1" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-2" value="&lt;strong&gt;User Management Service&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-3" target="r7ALPoRaKJmXhEfd2DpJ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-3" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-5" target="r7ALPoRaKJmXhEfd2DpJ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-17" value="Problem Created" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7ALPoRaKJmXhEfd2DpJ-16">
+          <mxGeometry x="-0.2207" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-5" value="&lt;strong&gt;Math Problem Service&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-6" value="&lt;strong&gt;Solution Evaluation Service&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="457" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-7" value="&lt;strong&gt;Leaderboard Service&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-8" value="&lt;strong&gt;Notification Service&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-9" value="&lt;strong&gt;Config Server&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-10" value="&lt;strong&gt;Registry Server&lt;/strong&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-11" target="r7ALPoRaKJmXhEfd2DpJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-19" value="Problem Created" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7ALPoRaKJmXhEfd2DpJ-18">
+          <mxGeometry x="-0.1355" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-11" target="r7ALPoRaKJmXhEfd2DpJ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-11" target="r7ALPoRaKJmXhEfd2DpJ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-11" value="Message Broker" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="360" y="597" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="r7ALPoRaKJmXhEfd2DpJ-6" target="r7ALPoRaKJmXhEfd2DpJ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-21" value="Problem Evaluated" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7ALPoRaKJmXhEfd2DpJ-20">
+          <mxGeometry x="-0.4092" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7ALPoRaKJmXhEfd2DpJ-28" value="Problem Evaluated" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="627" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
