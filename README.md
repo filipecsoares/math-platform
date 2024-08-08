@@ -253,7 +253,7 @@ This project is built using a microservices architecture, with each service hand
      - For Solution Evaluation Service: Spring Web, Spring Boot DevTools, RabbitMQ
      - For Leaderboard Service: Spring Web, Spring Data JPA, MySQL Driver
      - For Notification Service: Spring Web, Spring Boot DevTools, RabbitMQ
-     - For API Gateway: Spring Cloud Gateway, Spring Boot DevTools
+     - For API Gateway: Spring Cloud Gateway, Spring Boot DevTools, Spring Security
      - For Config Server: Spring Cloud Config Server, Spring Boot DevTools
      - For Eureka Server: Spring Cloud Eureka Server, Spring Boot DevTools
    - [ ] Create separate modules for each microservice within the project structure.
