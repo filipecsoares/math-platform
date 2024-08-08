@@ -13,6 +13,11 @@ spring:
   h2:
     console:
       enabled: true
+  # default user
+  security:
+    user:
+      name: ${SPRING_DEFAULT_USER_NAME:user}
+      password: ${SPRING_DEFAULT_USER_PASSWORD:user}
 
 server:
   port: 8081
