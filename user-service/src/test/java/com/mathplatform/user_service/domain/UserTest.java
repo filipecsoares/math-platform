@@ -8,16 +8,16 @@ class UserTest {
 
     @Test
     void shouldCreateUser() {
-        User user = User.newUser("name", "email", "password");
+        User user = User.newUser("name", "email@email.com", "password");
         assertEquals("name", user.getName());
-        assertEquals("email", user.getEmail());
+        assertEquals("email@email.com", user.getEmail());
         assertEquals("password", user.getPassword());
         assertNotNull(user.getId());
     }
 
     @Test
     void shouldNotCreateUserWithEmptyName() {
-        assertThrows(IllegalArgumentException.class, () -> User.newUser("", "email", "password"));
+        assertThrows(IllegalArgumentException.class, () -> User.newUser("", "email@email.com", "password"));
     }
 
     @Test

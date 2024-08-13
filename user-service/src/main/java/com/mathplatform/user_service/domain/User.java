@@ -5,22 +5,19 @@ import java.util.UUID;
 public class User {
     private UUID id;
     private String name;
-    private String email;
+    private Email email;
     private String password;
 
     public User(UUID id, String name, String email, String password) {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("name must not be null or empty");
         }
-        if (email == null || email.isEmpty()) {
-            throw new IllegalArgumentException("email must not be null or empty");
-        }
         if (password == null || password.isEmpty()) {
             throw new IllegalArgumentException("password must not be null or empty");
         }
         this.id = id;
         this.name = name;
-        this.email = email;
+        this.email = new Email(email);
         this.password = password;
     }
 
@@ -37,7 +34,7 @@ public class User {
     }
 
     public String getEmail() {
-        return email;
+        return email.getValue();
     }
 
     public String getPassword() {
