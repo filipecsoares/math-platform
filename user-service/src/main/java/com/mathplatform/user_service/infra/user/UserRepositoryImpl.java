@@ -18,4 +18,10 @@ public class UserRepositoryImpl implements UserRepository {
         userJpaRepository.save(UserTable.fromDomain(user));
         return user;
     }
+
+    @Override
+    public User findByEmail(String email) {
+        var userTable = userJpaRepository.findByEmail(email);
+        return userTable.map(UserTable::toDomain).orElseThrow(() -> new RuntimeException("User not found"));
+    }
 }

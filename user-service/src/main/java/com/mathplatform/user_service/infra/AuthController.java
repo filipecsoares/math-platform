@@ -1,5 +1,6 @@
 package com.mathplatform.user_service.infra;
 
+import com.mathplatform.user_service.application.usecase.LoginUser;
 import com.mathplatform.user_service.application.usecase.RegisterUser;
 import com.mathplatform.user_service.infra.login.LoginInput;
 import com.mathplatform.user_service.infra.login.LoginOutput;
@@ -15,9 +16,11 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     private final RegisterUser registerUser;
+    private final LoginUser loginUser;
 
-    public AuthController(RegisterUser registerUser) {
+    public AuthController(RegisterUser registerUser, LoginUser loginUser) {
         this.registerUser = registerUser;
+        this.loginUser = loginUser;
     }
 
     @GetMapping("/ping")
@@ -33,6 +36,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginOutput> login(@Valid @RequestBody LoginInput input) {
-        return ResponseEntity.ok(new LoginOutput("Bearer", "token"));
+        var credential = loginUser.execute(input.email(), input.password());
+        return ResponseEntity.ok(LoginOutput.fromCredential(credential));
     }
 }

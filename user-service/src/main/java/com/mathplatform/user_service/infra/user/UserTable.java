@@ -63,4 +63,8 @@ public class UserTable {
     public static UserTable fromDomain(User user) {
         return new UserTable(user.getId(), user.getName(), user.getEmail(), user.getPassword());
     }
+
+    public User toDomain() {
+        return new User(id, name, email, password);
+    }
 }
