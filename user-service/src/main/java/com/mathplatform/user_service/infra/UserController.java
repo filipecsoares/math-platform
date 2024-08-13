@@ -1,6 +1,6 @@
 package com.mathplatform.user_service.infra;
 
-import com.mathplatform.user_service.application.RegisterUser;
+import com.mathplatform.user_service.application.usecase.RegisterUser;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
