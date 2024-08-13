@@ -1,4 +1,4 @@
-package com.mathplatform.user_service.infra;
+package com.mathplatform.user_service.infra.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

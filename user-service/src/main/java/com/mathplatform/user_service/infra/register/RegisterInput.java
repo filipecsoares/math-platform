@@ -1,4 +1,4 @@
-package com.mathplatform.user_service.infra;
+package com.mathplatform.user_service.infra.register;
 
 import com.mathplatform.user_service.domain.User;
 import jakarta.validation.constraints.Email;

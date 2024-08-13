@@ -1,4 +1,4 @@
-package com.mathplatform.user_service.infra;
+package com.mathplatform.user_service.infra.user;
 
 import com.mathplatform.user_service.application.UserRepository;
 import com.mathplatform.user_service.domain.User;

@@ -1,6 +1,10 @@
 package com.mathplatform.user_service.infra;
 
 import com.mathplatform.user_service.application.usecase.RegisterUser;
+import com.mathplatform.user_service.infra.login.LoginInput;
+import com.mathplatform.user_service.infra.login.LoginOutput;
+import com.mathplatform.user_service.infra.register.RegisterInput;
+import com.mathplatform.user_service.infra.register.RegisterOutput;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,11 +12,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/users")
-public class UserController {
+public class AuthController {
 
     private final RegisterUser registerUser;
 
-    public UserController(RegisterUser registerUser) {
+    public AuthController(RegisterUser registerUser) {
         this.registerUser = registerUser;
     }
 
@@ -25,5 +29,10 @@ public class UserController {
     public ResponseEntity<RegisterOutput> register(@Valid @RequestBody RegisterInput input) {
         var output = RegisterOutput.fromUser(registerUser.execute(input.toUser()));
         return ResponseEntity.status(HttpStatus.CREATED).body(output);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<LoginOutput> login(@Valid @RequestBody LoginInput input) {
+        return ResponseEntity.ok(new LoginOutput("Bearer", "token"));
     }
 }
