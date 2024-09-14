@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: math-problem-service
+  datasource:
+    url: jdbc:h2:mem:problem-db
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: true
+    console.path: /h2-console
+    console.settings.trace: false
+    console.settings.web-allow-others: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8111
