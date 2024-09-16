@@ -25,7 +25,7 @@ public class CreateProblemController {
     @PostMapping
     public ResponseEntity<ProblemOutput> create(@RequestBody @Valid ProblemInput input) {
         var output = createProblemInputGateway.execute(input);
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand("problemId").toUri();
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(output.id()).toUri();
         return ResponseEntity.created(location).body(output);
     }
 }
