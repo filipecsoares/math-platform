@@ -70,6 +70,7 @@ public class ProblemModel {
 
     public Problem toDomain() {
         return new Problem(
+                this.id,
                 this.description,
                 this.answer,
                 this.category != null ? this.category.getId() : null,

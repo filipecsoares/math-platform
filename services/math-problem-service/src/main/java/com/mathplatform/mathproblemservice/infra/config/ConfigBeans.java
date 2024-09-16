@@ -1,11 +1,9 @@
 package com.mathplatform.mathproblemservice.infra.config;
 
-import com.mathplatform.mathproblemservice.application.ports.CreateProblemInputGateway;
-import com.mathplatform.mathproblemservice.application.ports.CreateProblemOutputGateway;
-import com.mathplatform.mathproblemservice.application.ports.GetAllProblemsInputGateway;
-import com.mathplatform.mathproblemservice.application.ports.GetProblemsOutputGateway;
+import com.mathplatform.mathproblemservice.application.ports.*;
 import com.mathplatform.mathproblemservice.application.usecase.CreateProblemUseCase;
 import com.mathplatform.mathproblemservice.application.usecase.GetAllProblemsUseCase;
+import com.mathplatform.mathproblemservice.application.usecase.GetProblemByIdUseCase;
 import com.mathplatform.mathproblemservice.infra.repository.GetProblemsRepositoryDatabase;
 import com.mathplatform.mathproblemservice.infra.repository.ProblemRepositoryDatabase;
 import org.springframework.context.annotation.Bean;
@@ -32,5 +30,10 @@ public class ConfigBeans {
     @Bean
     public GetProblemsOutputGateway getProblemsOutputGateway() {
         return new GetProblemsRepositoryDatabase();
+    }
+
+    @Bean
+    public GetProblemByIdInputGateway getProblemByIdInputGateway() {
+        return new GetProblemByIdUseCase(getProblemsOutputGateway());
     }
 }

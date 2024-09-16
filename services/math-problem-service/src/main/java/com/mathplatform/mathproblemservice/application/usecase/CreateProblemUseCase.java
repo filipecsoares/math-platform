@@ -16,7 +16,7 @@ public class CreateProblemUseCase implements CreateProblemInputGateway {
 
     @Override
     public ProblemOutput execute(ProblemInput problemInput) {
-        var problem = new Problem(problemInput.description(), problemInput.answer(), problemInput.categoryId(), problemInput.difficulty());
+        var problem = Problem.newProblem(problemInput.description(), problemInput.answer(), problemInput.categoryId(), problemInput.difficulty());
         var savedProblem = createProblemOutputGateway.save(problem);
         return ProblemOutput.fromDomain(savedProblem);
     }

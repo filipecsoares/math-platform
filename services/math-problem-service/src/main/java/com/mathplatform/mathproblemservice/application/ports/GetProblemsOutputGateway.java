@@ -6,4 +6,5 @@ import java.util.List;
 public interface GetProblemsOutputGateway {
 
     List<Problem> findAll();
+    Problem findById(final String id);
 }

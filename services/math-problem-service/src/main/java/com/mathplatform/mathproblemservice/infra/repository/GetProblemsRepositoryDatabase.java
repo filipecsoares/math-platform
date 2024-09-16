@@ -15,4 +15,8 @@ public class GetProblemsRepositoryDatabase implements GetProblemsOutputGateway {
     public List<Problem> findAll() {
         return problemRepository.findAll().stream().map(ProblemModel::toDomain).toList();
     }
+    @Override
+    public Problem findById(final String id) {
+        return problemRepository.findById(id).map(ProblemModel::toDomain).orElse(null);
+    }
 }

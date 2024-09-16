@@ -10,7 +10,7 @@ public class Problem {
     private MathCategory category;
     private DifficultyEnum difficulty;
 
-    public Problem(String description, String answer, String categoryId, String difficulty) {
+    public Problem(String id, String description, String answer, String categoryId, String difficulty) {
         if (description == null || description.isBlank()) {
             throw new IllegalArgumentException("Description cannot be null or empty");
         }
@@ -23,7 +23,11 @@ public class Problem {
         this.description = description;
         this.answer = answer;
         this.difficulty = DifficultyEnum.fromString(difficulty);
-        this.id = UUID.randomUUID();
+        this.id = UUID.fromString(id);
+    }
+
+    public static Problem newProblem(String description, String answer, String categoryId, String difficulty) {
+        return new Problem(UUID.randomUUID().toString(), description, answer, categoryId, difficulty);
     }
 
     public String getId() {
