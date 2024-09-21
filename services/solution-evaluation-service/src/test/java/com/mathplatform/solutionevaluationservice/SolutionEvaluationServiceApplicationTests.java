@@ -1,4 +1,4 @@
-package com.mathplatform.solution_evaluation_service;
+package com.mathplatform.solutionevaluationservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

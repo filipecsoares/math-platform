@@ -4,6 +4,7 @@ import com.mathplatform.mathproblemservice.domain.Problem;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "problem")
 public class ProblemModel {
 
     @Id

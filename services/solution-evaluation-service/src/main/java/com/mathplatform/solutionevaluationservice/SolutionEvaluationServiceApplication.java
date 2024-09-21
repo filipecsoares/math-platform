@@ -1,4 +1,4 @@
-package com.mathplatform.solution_evaluation_service;
+package com.mathplatform.solutionevaluationservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
