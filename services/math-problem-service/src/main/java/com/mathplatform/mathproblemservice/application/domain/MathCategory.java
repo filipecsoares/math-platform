@@ -1,4 +1,4 @@
-package com.mathplatform.mathproblemservice.domain;
+package com.mathplatform.mathproblemservice.application.domain;
 
 import java.util.UUID;
 

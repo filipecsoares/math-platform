@@ -84,8 +84,6 @@ This project is built using a microservices architecture, with each service hand
 4. **Prepare Docker Compose Configuration**
    - Create a `docker-compose.yml` file in the root directory of your project with the following configuration:
      ```yaml
-     version: '3.8'
-
      services:
        eureka-server:
          image: openjdk:21-jre-slim

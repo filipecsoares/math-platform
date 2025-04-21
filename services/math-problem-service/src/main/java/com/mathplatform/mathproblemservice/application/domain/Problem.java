@@ -1,4 +1,4 @@
-package com.mathplatform.mathproblemservice.domain;
+package com.mathplatform.mathproblemservice.application.domain;
 
 import java.util.UUID;
 
@@ -22,7 +22,11 @@ public class Problem {
         }
         this.description = description;
         this.answer = answer;
-        this.difficulty = DifficultyEnum.fromString(difficulty);
+        if (difficulty == null || difficulty.isBlank()) {
+            this.difficulty = DifficultyEnum.EASY;
+        } else {
+            this.difficulty = DifficultyEnum.fromString(difficulty);
+        }
         this.id = UUID.fromString(id);
     }
 

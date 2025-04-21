@@ -1,6 +1,6 @@
 package com.mathplatform.mathproblemservice.infra.model;
 
-import com.mathplatform.mathproblemservice.domain.Problem;
+import com.mathplatform.mathproblemservice.application.domain.Problem;
 import jakarta.persistence.*;
 
 @Entity

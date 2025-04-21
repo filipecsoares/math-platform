@@ -1,6 +1,6 @@
 package com.mathplatform.mathproblemservice.application.dto;
 
-import com.mathplatform.mathproblemservice.domain.Problem;
+import com.mathplatform.mathproblemservice.application.domain.Problem;
 
 public record ProblemOutput(String id, String description, String answer, String category, String difficulty) {
 

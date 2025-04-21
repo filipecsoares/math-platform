@@ -4,7 +4,7 @@ import com.mathplatform.mathproblemservice.application.dto.ProblemInput;
 import com.mathplatform.mathproblemservice.application.dto.ProblemOutput;
 import com.mathplatform.mathproblemservice.application.ports.CreateProblemInputGateway;
 import com.mathplatform.mathproblemservice.application.ports.CreateProblemOutputGateway;
-import com.mathplatform.mathproblemservice.domain.Problem;
+import com.mathplatform.mathproblemservice.application.domain.Problem;
 
 public class CreateProblemUseCase implements CreateProblemInputGateway {
 
